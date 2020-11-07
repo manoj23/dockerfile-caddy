@@ -13,4 +13,4 @@ LABEL BUILD_ARGS=${BUILD_ARGS}
 COPY --from=builder /go/caddy /bin/caddy
 EXPOSE 80
 ENTRYPOINT [ "/bin/caddy" ]
-CMD [ "-conf", "/etc/Caddyfile" ]
+CMD [ "run", "-config", "/etc/Caddyfile" ]
