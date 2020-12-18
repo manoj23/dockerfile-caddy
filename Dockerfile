@@ -9,6 +9,9 @@ RUN apk --no-cache add git \
 	&& xcaddy build ${BUILD_ARGS}
 FROM scratch
 LABEL maintainer="Georges Savoundararadj <savoundg@gmail.com>"
+ARG CADDY_VERSION
+ARG BUILD_ARGS
+ARG DOCKERFILE_HASH
 LABEL CADDY_VERSION=${CADDY_VERSION}
 LABEL BUILD_ARGS=${BUILD_ARGS}
 LABEL DOCKERFILE_HASH=${DOCKERFILE_HASH}
