@@ -12,6 +12,7 @@ LABEL maintainer="Georges Savoundararadj <savoundg@gmail.com>"
 ARG CADDY_VERSION
 ARG BUILD_ARGS
 ARG DOCKERFILE_HASH
+LABEL org.opencontainers.image.source https://github.com/manoj23/dockerfile-caddy/
 LABEL CADDY_VERSION=${CADDY_VERSION}
 LABEL BUILD_ARGS=${BUILD_ARGS}
 LABEL DOCKERFILE_HASH=${DOCKERFILE_HASH}
