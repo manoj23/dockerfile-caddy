@@ -19,4 +19,4 @@ LABEL DOCKERFILE_HASH=${DOCKERFILE_HASH}
 COPY --from=builder /go/caddy /bin/caddy
 EXPOSE 80
 ENTRYPOINT [ "/bin/caddy" ]
-CMD [ "run", "-config", "/etc/Caddyfile" ]
+CMD [ "run", "--config", "/etc/Caddyfile" ]

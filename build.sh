@@ -1,5 +1,5 @@
 REPO="caddy"
-CADDY_VERSION="v2.2.0"
+CADDY_VERSION="v2.6.1"
 IMAGE="caddy"
 DOCKERFILE_HASH=$(git rev-parse --short HEAD)
 BUILDER="golang-1.19.1-alpine3.16"
