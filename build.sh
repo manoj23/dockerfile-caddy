@@ -6,7 +6,7 @@ REPO="caddy"
 CADDY_VERSION="v2.6.1"
 XCADDY_VERSION="v0.3.5"
 DOCKERFILE_HASH=$(git rev-parse --short HEAD)
-BUILDER="golang-1.19.1-alpine3.16"
+BUILDER="golang-1.21.1-alpine3.18"
 
 docker_build_tag_and_push()
 {
