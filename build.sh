@@ -3,7 +3,7 @@
 set -e
 
 REPO="caddy"
-CADDY_VERSION="v2.6.1"
+CADDY_VERSION="v2.7.3"
 XCADDY_VERSION="v0.3.5"
 DOCKERFILE_HASH=$(git rev-parse --short HEAD)
 BUILDER="golang-1.21.1-alpine3.18"
