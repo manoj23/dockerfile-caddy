@@ -6,7 +6,8 @@ REPO="caddy"
 CADDY_VERSION="v2.7.3"
 XCADDY_VERSION="v0.3.5"
 DOCKERFILE_HASH=$(git rev-parse --short HEAD)
-BUILDER="golang-1.21.1-alpine3.18"
+GOLANG_BUILDER_VERSION="1.21.1-alpine3.18"
+BUILDER="golang-${GOLANG_BUILDER_VERSION}"
 
 docker_build_tag_and_push()
 {
@@ -15,6 +16,7 @@ docker_build_tag_and_push()
 	TAG="${IMAGE}:${BUILDER}-${CADDY_VERSION}"
 
 	docker build "https://github.com:/manoj23/dockerfile-${REPO}.git" \
+		--build-arg "GOLANG_BUILDER_VERSION=${GOLANG_BUILDER_VERSION}" \
 		--build-arg "CADDY_VERSION=${CADDY_VERSION}" \
 		--build-arg "XCADDY_VERSION=${XCADDY_VERSION}" \
 		--build-arg "BUILD_ARGS=${BUILD_ARG}" \
