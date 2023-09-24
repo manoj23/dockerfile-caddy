@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 REPO="caddy"
 CADDY_VERSION="v2.6.1"
 XCADDY_VERSION="v0.3.5"
