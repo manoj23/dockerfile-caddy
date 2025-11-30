@@ -16,7 +16,7 @@ ARG CADDY_VERSION
 ARG XCADDY_VERSION
 ARG BUILD_ARGS
 ARG DOCKERFILE_HASH
-LABEL org.opencontainers.image.source https://github.com/manoj23/dockerfile-caddy/
+LABEL org.opencontainers.image.source=https://github.com/manoj23/dockerfile-caddy/
 LABEL GOLANG_BUILDER_VERSION=${GOLANG_BUILDER_VERSION}
 LABEL CADDY_VERSION=${CADDY_VERSION}
 LABEL XCADDY_VERSION=${XCADDY_VERSION}
