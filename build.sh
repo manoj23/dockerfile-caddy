@@ -29,3 +29,4 @@ docker_build_tag_and_push()
 
 docker_build_tag_and_push "caddy" ""
 docker_build_tag_and_push "caddy-webdav" "--with github.com/mholt/caddy-webdav"
+docker_build_tag_and_push "caddy-webdav-manoj23" "--with github.com/manoj23/caddy-webdav"
